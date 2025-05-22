@@ -1,0 +1,18 @@
+header,main,section,div,nav {
+    border:1px solid #ff0000;
+    border-radius: 10px;
+}
+
+/*
+tr:nth-child(even)  {
+    background-color:moccasin;
+}
+
+tr:nth-child(odd) {
+    background-color: #cdcdcd;
+}
+
+thead tr {
+    background-color:#666 !important;
+    color:#fff;
+}*/

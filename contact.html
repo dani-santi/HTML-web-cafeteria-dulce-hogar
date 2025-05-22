@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú-Carta</title>
+    <meta name="description" content="Cafetería Mi Dulce Hogar, un lugar especial para vosotros">
+    <meta name="keywords" content="cafetería, Málaga, dulces, repostería">
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header><!--Header-dentro ira el nav con el menu de navegación-->
+        <a href="index.html"><img src="imagenes/logo-cafe.svg" width="10%" alt="logo Cafeteria"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="menu.html">Menú-Carta</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main><!--MAIN contenido central-->
+        <section>
+            <!--Seccion Información para contacto:-->
+            <h1>Información de contacto:</h1>
+            <p>
+                Dirección: Calle Dulce, 25 - Local <br>
+                C. P.: 29001, Málaga<br>
+                Teléfono fijo: 952 123 456<br>
+                Teléfono móvil: 666 777 888<br>
+                Horario: De lunes a viernes: De 8:00-20:00 h; sábados: De 9:00-18:00 h.<br>
+                Correo electrónico: <a href="mailto:contacto@midulcehogar.com">contacto@midulcehogar.com</a>
+            </p>
+        </section>
+
+        <section><!--Seccion Formulario-->
+            <h2>Formulario de contacto:</h2>
+            <form method="POST" action="">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre" pattern="[A-Za-z\' ']+"
+                        required aria-describedby="nombre-info">
+                    <small id="nombre-info">Por favor, ingresa tu nombre</small>
+                </div>
+        
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" nombre="email" placeholder="ejemplo@correo.com" required
+                        aria-describedby="email-info">
+                    <small id="email-info"> Ingresa un correo válido</small>
+                </div>
+        
+                <div>
+                    <label for="asunto" id="asunto" name="asunto" aria-describedby="asunto-info">
+                    Asunto o tema a consultar
+                    </label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Escribe aquí el tema o asunto a consultar"
+                        required>
+                    <small id="asunto-info">Asunto o tema consultar</small>
+                </div>
+        
+                <div>
+                    <label for="mensaje" id="mensaje" name="mensaje" >Mensaje</label>
+                    <textarea required id="mensaje" name="mensaje" placeholder="escribe tu mensaje/comentario aquí" rows="10" cols="50">
+                    </textarea>
+                </div>
+        
+                <div>
+                    <button type="reset">Borrar datos</button><br>
+                    <button type="submit">Enviar</button>
+                </div>        
+            </form>
+            <!--Fin de formulario-->
+        </section>
+        <br><br>
+
+        <!--iframe con mapa-->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0048147914245!2d-4.425356503210403!3d36.72244560000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7be17fe8307%3A0x49f2ff7839d0ba5!2sConfiter%C3%ADa%20Aparicio!5e0!3m2!1ses!2ses!4v1736378980173!5m2!1ses!2ses"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+          
+    </main>
+
+    <footer><!--Footer pie de la página web-->
+        <p>
+            &copy; 2025 Mi Dulce Hogar - C/ Dulce, 25 - Local 3 - 29001 Málaga<br>
+            Tel.: (+34) 952 123 456 - (+34) 666 777 888 - E-mail: 
+            <a href="mailto:contacto@midulcehogar.com">Info@midulcehogar.com</a><br>
+        </p>
+        <p>
+            <a href="textos-legales/legal.html">Aviso legal</a>&nbsp;&nbsp;
+            <a href="textos-legales/privacidad.html">Política de Privacidad</a>&nbsp;&nbsp;
+            <a href="textos-legales/cookies.html">Política de Cookies</a>&nbsp;&nbsp;
+        </p>
+        
+        <!--Redes Sociales-->
+        <a href="#"><img src="imagenes/icono-facebook.png" alt="" width="40"></a>
+        <a href="#"><img src="imagenes/icono-instagram.jpg" alt="" width="40"></a>
+    </footer>
+    
+</body>
+</html>
